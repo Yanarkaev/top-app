@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+// const path = require("path");
+
+const nextConfig = {
+  sassOptions: {
+    prependData: '@import "@/styles/main.scss";',
+  },
+};
+
+module.exports = nextConfig;
