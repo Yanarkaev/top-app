@@ -1,4 +1,4 @@
-import { Button, H, P } from "@/components/ui";
+import { Button, H, P, Tag } from "@/components/ui";
 
 const index = () => {
   return (
@@ -9,6 +9,10 @@ const index = () => {
       <P size="l">Large</P>
       <P size="m">Medium</P>
       <P size="s">Small</P>
+      <Tag>hello</Tag>
+      <Tag variant="green">hello</Tag>
+      <Tag variant="gray">hello</Tag>
+      <Tag href="google.com">google.com</Tag>
     </div>
   );
 };

@@ -1,0 +1,30 @@
+.Tag {
+  border-radius: 20px;
+  padding: 4px 12px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+
+  a {
+    text-decoration: none;
+    color: $primary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.outlined {
+  border: 1px solid $light-gray;
+}
+
+.green {
+  color: $green;
+  background: $light-green;
+}
+
+.gray {
+  background: $gray;
+  color: $white;
+}
