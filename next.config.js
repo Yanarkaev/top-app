@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  reactStrictMode: true,
   sassOptions: {
-    prependData: '@import "@/styles/main.scss";',
+    prependData: '@import "@/styles/base.scss";',
   },
+
   webpack(config) {
     config.module.rules.push({
       loader: "@svgr/webpack",
