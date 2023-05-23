@@ -1,7 +1,6 @@
 import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import styles from "./Button.module.scss";
 import cn from "classnames";
-import Icon from "../../../../public/next.svg";
 
 interface IProps
   extends DetailedHTMLProps<
@@ -25,7 +24,6 @@ export const Button = ({
       {...props}
     >
       {children}
-      <Icon/>
     </button>
   );
 };
