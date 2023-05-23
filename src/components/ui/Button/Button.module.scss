@@ -1,0 +1,28 @@
+.Button {
+  color: $white;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.primary {
+  background: $primary;
+
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
+
+.outlined {
+  background: transparent;
+  border: 1px solid $light-gray;
+  color: $black;
+
+  &:hover{
+    background: $light-gray;
+  }
+}
