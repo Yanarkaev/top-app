@@ -1,28 +1,31 @@
 .Button {
-  color: $white;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  transition: .2s;
+	padding: 10px;
+
+	cursor: pointer;
+	transition: .2s;
+	text-align: center;
+
+	color: $white;
+	border: 0;
+	border-radius: 5px;
+
+	font-size: 14px;
 }
 
 .primary {
-  background: $primary;
+	background: $primary;
 
-  &:hover {
-    background: darken($primary, 10%);
-  }
+	&:hover {
+		background: darken($primary, 10%);
+	}
 }
 
 .outlined {
-  background: transparent;
-  border: 1px solid $light-gray;
-  color: $black;
+	color: $black;
+	border: 1px solid $light-gray;
+	background: transparent;
 
-  &:hover{
-    background: $light-gray;
-  }
+	&:hover{
+		background: $light-gray;
+	}
 }
