@@ -1,30 +1,34 @@
 .Tag {
-  border-radius: 20px;
-  padding: 4px 12px;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 12px;
+	display: inline-block;
 
-  a {
-    text-decoration: none;
-    color: $primary;
+	padding: 4px 12px;
 
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+	border-radius: 20px;
+
+	font-size: 12px;
+	font-weight: 600;
+
+	a {
+		text-decoration: none;
+
+		color: $primary;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .outlined {
-  border: 1px solid $light-gray;
+	border: 1px solid $light-gray;
 }
 
 .green {
-  color: $green;
-  background: $light-green;
+	color: $green;
+	background: $light-green;
 }
 
 .gray {
-  background: $gray;
-  color: $white;
+	color: $white;
+	background: $gray;
 }
