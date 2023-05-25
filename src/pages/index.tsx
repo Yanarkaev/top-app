@@ -1,15 +1,14 @@
 import { Rating } from "@/components/Rating/Rating";
-import { Button, H, P, Tag } from "@/components/ui";
+import { withLayout } from "@/layout/withLayout";
 import { useState } from "react";
 
-const index = () => {
-  const [rating, setRating] = useState<number>(4)
+const Home = () => {
+  const [rating, setRating] = useState<number>(4);
   return (
     <div>
-      
-      <Rating rating={rating} setRating={setRating} isEditable={true}/>
+      <Rating rating={rating} setRating={setRating} isEditable={true} />
     </div>
   );
 };
 
-export default index;
+export default withLayout(Home);
