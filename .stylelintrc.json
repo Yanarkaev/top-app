@@ -1,5 +1,6 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-order-config-standard"],
+  "ignoreFiles": ["src/styles/**/*.scss"],
   "plugins": ["stylelint-order"],
   "rules": {
     "indentation": "tab",
