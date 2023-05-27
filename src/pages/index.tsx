@@ -7,16 +7,7 @@ import { useState } from "react";
 
 const Home = ({ menu }: HomeProps) => {
   const [rating, setRating] = useState<number>(4);
-  return (
-    <div>
-      {/* <Rating rating={rating} setRating={setRating} isEditable={true} /> */}
-      <ul>
-        {menu.map((el) => (
-          <li key={el._id.secondCategory}>{el._id.secondCategory}</li>
-        ))}
-      </ul>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default withLayout(Home);
@@ -26,7 +17,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const { data: menu } = await axios.post<MenuItem[]>(
     "https://courses-top.ru" + "/api/top-page/find",
     {
-      firstCategory
+      firstCategory,
     }
   );
 
